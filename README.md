@@ -139,6 +139,7 @@ The DAG generator tool works with standard XML format ([Example](./example/tasks
 ## 🚧 Limitations 
 - For now, the generators just support the discrete-time model and all the numbers are integer.
 
+
 ## 🌱 Contribution
 With your feedback and conversation, you can assist me in developing this application.
 - Open pull request with improvements
@@ -148,3 +149,6 @@ With your feedback and conversation, you can assist me in developing this applic
 Copyright © 2021 [Pourya Gohari](https://pourya-gohari.ir)
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details
+
+## 🔄 New version
+Newer and more advanced versions of this tool is available [here](https://github.com/porya-gohary/real-time-task-generator-framework). 
