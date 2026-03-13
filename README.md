@@ -24,11 +24,37 @@
 ## 📦 Required Packages
 Assuming that `Python` (version 3) is installed in the targeted machine, to install the required packages:
 ```
-pip install docopt scipy numpy csv graphviz
+pip install docopt scipy numpy graphviz
 ```
 or
 ```
-python -m pip install docopt scipy numpy csv graphviz
+python -m pip install docopt scipy numpy graphviz
+```
+
+## 🐳 Run With Docker
+Build the image from the repository root (where `Dockerfile` exists):
+```
+docker build -t rt-task-gen .
+```
+
+Run the default command from the Docker image (`python task_generator.py --help`):
+```
+docker run --rm rt-task-gen
+```
+
+Run a custom command, for example generating a task set:
+```
+docker run --rm rt-task-gen python task_generator.py
+```
+
+If you want generated output files to be available on the host machine, mount the current directory:
+```
+docker run --rm -v ${PWD}:/app rt-task-gen python task_generator.py
+```
+
+For Bash shells (Linux/macOS/Git Bash), use:
+```
+docker run --rm -v "$(pwd):/app" rt-task-gen python task_generator.py
 ```
 
 ## ⚙️ Usage
